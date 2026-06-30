@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Israel's Butterflies — a field guide to five everyday wonders</title>
+<meta name="description" content="A small tribute to the beauty of Israel's butterflies. Five of the most frequently recorded species, where three continents meet." />
+<meta property="og:title" content="Israel's Butterflies" />
+<meta property="og:description" content="Where three continents meet — a field guide to five everyday wonders." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="motion.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- forest backdrop (filled + layered by CSS) -->
+<div class="forest-bg" aria-hidden="true">
+  <div class="canopy-light"></div>
+  <div class="foliage foliage--far"></div>
+  <div class="foliage foliage--near"></div>
+</div>
+
+<!-- drifting pollen + flying butterflies (built by site.js) -->
+<div class="motes" id="motes" aria-hidden="true"></div>
+<div class="sky" id="sky" aria-hidden="true"></div>
+
+<!-- foreground meadow: grass + wildflowers (built by site.js) -->
+<svg class="meadow" id="meadow" viewBox="0 0 1440 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
+
+<header class="nav">
+  <a class="brand" href="#top">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32" width="26" height="26"><g fill="currentColor"><path d="M16 16c-2-6-6-9-9.5-8C3 9 2.5 14 5 18c2.2 3.5 7 4 11 2z" opacity=".9"/><path d="M16 16c2-6 6-9 9.5-8C29 9 29.5 14 27 18c-2.2 3.5-7 4-11 2z" opacity=".7"/><path d="M16 15.5c-1.4-3-3.5-7-3.5-9.5S14.5 2 16 2s3.5 1.5 3.5 4-2.1 6.5-3.5 9.5z" opacity=".55"/><rect x="15.2" y="9" width="1.6" height="15" rx=".8"/></g></svg>
+    </span>
+    <span class="brand-text">Israel's Butterflies</span>
+  </a>
+  <nav class="nav-links">
+    <a href="#species" class="t-micro">The five</a>
+    <a href="#about" class="t-micro">About</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow" data-reveal>Where three continents meet</p>
+      <h1 class="hero-title" data-reveal data-reveal-delay="80">
+        The everyday <em>wonders</em><br />of Israel's skies
+      </h1>
+      <p class="hero-lead" data-reveal data-reveal-delay="200">
+        Israel sits at the junction of three faunal worlds — Palaearctic, Afrotropical
+        and Oriental. Its butterflies are a small, winged record of that crossing.
+        Here are five you can meet almost anywhere: common, far-wandering, and quietly beautiful.
+      </p>
+      <div class="hero-cta" data-reveal data-reveal-delay="320">
+        <a href="#species" class="btn btn--primary t-micro">Meet the five</a>
+        <a href="#about" class="btn btn--ghost t-micro">Why they matter</a>
+      </div>
+    </div>
+    <a href="#species" class="scroll-cue" aria-label="Scroll to species">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" aria-label="By the numbers">
+    <div class="stat" data-reveal>
+      <span class="stat-num" data-count="3">0</span>
+      <span class="stat-label">continents<br />meet here</span>
+    </div>
+    <div class="stat" data-reveal data-reveal-delay="120">
+      <span class="stat-num" data-count="5">0</span>
+      <span class="stat-label">species in<br />this guide</span>
+    </div>
+    <div class="stat" data-reveal data-reveal-delay="240">
+      <span class="stat-num" data-count="4">0</span>
+      <span class="stat-label">broods in a<br />single year</span>
+    </div>
+    <div class="stat" data-reveal data-reveal-delay="360">
+      <span class="stat-num" data-count="80"><span></span></span>
+      <span class="stat-label">mm — the<br />largest wingspan</span>
+    </div>
+  </section>
+
+  <!-- SPECIES -->
+  <section id="species" class="species">
+    <header class="section-head" data-reveal>
+      <p class="kicker">The five</p>
+      <h2>Common, but never ordinary</h2>
+      <p class="section-sub">
+        These are the species most frequently recorded in Israel's structured monitoring —
+        wide-ranging, many-brooded, and at home even in disturbed ground.
+      </p>
+    </header>
+
+    <!-- 01 Painted Lady -->
+    <article class="plate" data-reveal>
+      <div class="plate-figure">
+        <span class="plate-no">01</span>
+        <img class="specimen" src="painted-lady.png" alt="Painted Lady, Vanessa cardui — orange-brown wings with black-and-white tips" loading="lazy" />
+      </div>
+      <div class="plate-body">
+        <h3 class="sp-name">Painted Lady</h3>
+        <p class="sp-latin">Vanessa cardui <span class="sp-fam">· Nymphalidae</span></p>
+        <ul class="sp-meta">
+          <li><span>Wingspan</span>45–70 mm</li>
+          <li><span>Flight</span>Year-round; peaks spring &amp; autumn</li>
+          <li><span>Habitat</span>Countryside, gardens, scrub, farmland</li>
+        </ul>
+        <p class="sp-desc">
+          The single most abundant butterfly in Israeli surveys, and one of the most widespread
+          insects on Earth. A long-distance migrant, it breeds continuously across the Mediterranean
+          and moves north and south with the seasons. Orange-brown above with black-and-white tips;
+          an underside mosaic of browns and whites. Caterpillars favour thistles and mallows.
+        </p>
+      </div>
+    </article>
+
+    <!-- 02 Small White -->
+    <article class="plate plate--rev" data-reveal>
+      <div class="plate-figure">
+        <span class="plate-no">02</span>
+        <span class="specimen specimen--svg" role="img" aria-label="Small White, Pieris rapae — white wings with dark forewing tips and two black spots">
+          <svg viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="wingW" cx="50%" cy="42%" r="70%">
+                <stop offset="0%" stop-color="#fdfdfa"/><stop offset="78%" stop-color="#f3f4ea"/><stop offset="100%" stop-color="#e7ead8"/>
+              </radialGradient>
+            </defs>
+            <g>
+              <ellipse cx="120" cy="100" rx="6.5" ry="34" fill="#54493a"/>
+              <ellipse cx="120" cy="70" rx="5" ry="8" fill="#3f372b"/>
+              <path d="M120 78 C92 40 60 34 46 44 c-16 12 -16 44 4 56 c16 9 50 7 70 -6 z" fill="url(#wingW)" stroke="#d9dcc6" stroke-width="1.5"/>
+              <path d="M120 78 C148 40 180 34 194 44 c16 12 16 44 -4 56 c-16 9 -50 7 -70 -6 z" fill="url(#wingW)" stroke="#d9dcc6" stroke-width="1.5"/>
+              <path d="M120 118 C100 132 70 138 58 150 c-10 12 -4 28 12 30 c20 3 42 -16 50 -36 z" fill="url(#wingW)" stroke="#d9dcc6" stroke-width="1.5"/>
+              <path d="M120 118 C140 132 170 138 182 150 c10 12 4 28 -12 30 c-20 3 -42 -16 -50 -36 z" fill="url(#wingW)" stroke="#d9dcc6" stroke-width="1.5"/>
+              <path d="M52 44 c-10 -2 -16 4 -16 10 c10 -2 18 -3 24 0 z" fill="#5a5142"/>
+              <path d="M188 44 c10 -2 16 4 16 10 c-10 -2 -18 -3 -24 0 z" fill="#5a5142"/>
+              <circle cx="96" cy="96" r="6.5" fill="#3f372b"/>
+              <circle cx="144" cy="96" r="6.5" fill="#3f372b"/>
+              <path d="M120 64 c-3 -10 -10 -16 -16 -16" fill="none" stroke="#473d30" stroke-width="2" stroke-linecap="round"/>
+              <path d="M120 64 c3 -10 10 -16 16 -16" fill="none" stroke="#473d30" stroke-width="2" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </span>
+      </div>
+      <div class="plate-body">
+        <h3 class="sp-name">Small White</h3>
+        <p class="sp-latin">Pieris rapae <span class="sp-fam">· Pieridae</span></p>
+        <ul class="sp-meta">
+          <li><span>Wingspan</span>38–57 mm</li>
+          <li><span>Flight</span>February–November, many broods</li>
+          <li><span>Habitat</span>Gardens, farmland, verges, waste ground</li>
+        </ul>
+        <p class="sp-desc">
+          Ubiquitous wherever brassicas grow — a familiar garden visitor and minor crop pest.
+          White wings carry one or two black forewing spots (females two, males one); the undersides
+          are a pale yellow-green. Endlessly adaptable, from the coast to the semi-arid south.
+          Larvae feed on cabbage, mustard and wild crucifers.
+        </p>
+        <p class="sp-credit">Illustration</p>
+      </div>
+    </article>
+
+    <!-- 03 Plain Tiger -->
+    <article class="plate" data-reveal>
+      <div class="plate-figure">
+        <span class="plate-no">03</span>
+        <img class="specimen" src="plain-tiger.png" alt="Plain Tiger, Danaus chrysippus — bold orange wings with black, white-spotted borders" loading="lazy" />
+      </div>
+      <div class="plate-body">
+        <h3 class="sp-name">Plain Tiger</h3>
+        <p class="sp-latin">Danaus chrysippus <span class="sp-fam">· Nymphalidae</span></p>
+        <ul class="sp-meta">
+          <li><span>Wingspan</span>70–80 mm</li>
+          <li><span>Flight</span>Year-round</li>
+          <li><span>Habitat</span>Open ground, gardens, dry scrub, coast</li>
+        </ul>
+        <p class="sp-desc">
+          The "African Monarch" — bold orange-and-black and impossible to miss. It is chemically
+          defended: larvae sequester toxins from milkweeds, and the adult's bright warning colours
+          keep predators at bay. Several forms occur; adults roost communally and make local
+          migrations, and the species is a model for mimics across its range.
+        </p>
+      </div>
+    </article>
+
+    <!-- 04 Bath White -->
+    <article class="plate plate--rev" data-reveal>
+      <div class="plate-figure">
+        <span class="plate-no">04</span>
+        <img class="specimen" src="bath-white.png" alt="Bath White, Pontia daplidice — white wings with olive-brown chequered markings" loading="lazy" />
+      </div>
+      <div class="plate-body">
+        <h3 class="sp-name">Bath White</h3>
+        <p class="sp-latin">Pontia daplidice <span class="sp-fam">· Pieridae</span></p>
+        <ul class="sp-meta">
+          <li><span>Wingspan</span>40–50 mm</li>
+          <li><span>Flight</span>March–October, 3–4 broods</li>
+          <li><span>Habitat</span>Open, dry, arid country; rocky slopes; steppe</li>
+        </ul>
+        <p class="sp-desc">
+          A common white of Israel's open, arid landscapes — easy to overlook among other whites
+          until you catch the green-chequered mosaic under the hindwing, olive and white scales
+          tiled together. A strong, far-wandering flier whose numbers swell in late summer.
+          Larvae feed on wild crucifers like Moricandia and Raphanus.
+        </p>
+      </div>
+    </article>
+
+    <!-- 05 Long-tailed Blue -->
+    <article class="plate" data-reveal>
+      <div class="plate-figure">
+        <span class="plate-no">05</span>
+        <img class="specimen" src="long-tailed-blue.png" alt="Long-tailed Blue, Lampides boeticus — violet-blue wings with slender tails and eye-spots" loading="lazy" />
+      </div>
+      <div class="plate-body">
+        <h3 class="sp-name">Long-tailed Blue</h3>
+        <p class="sp-latin">Lampides boeticus <span class="sp-fam">· Lycaenidae</span></p>
+        <ul class="sp-meta">
+          <li><span>Wingspan</span>29–38 mm</li>
+          <li><span>Flight</span>Year-round in warm areas; many broods</li>
+          <li><span>Habitat</span>Scrub, gardens, field edges — wherever legumes grow</li>
+        </ul>
+        <p class="sp-desc">
+          One of the most cosmopolitan butterflies on Earth, ranging from Europe to Australia, and
+          among Israel's most widespread small blues. Males shine violet-blue; females are browner
+          with a blue flush at the base. Two slender tails and eye-spots form a false head that
+          deflects predator strikes. Larvae develop inside legume pods — including peas and beans.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <!-- LATIN NAME MARQUEE -->
+  <div class="names marquee-container" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="names-row">
+        Vanessa cardui&nbsp;&nbsp;✦&nbsp;&nbsp;Pieris rapae&nbsp;&nbsp;✦&nbsp;&nbsp;Danaus chrysippus&nbsp;&nbsp;✦&nbsp;&nbsp;Pontia daplidice&nbsp;&nbsp;✦&nbsp;&nbsp;Lampides boeticus&nbsp;&nbsp;✦&nbsp;&nbsp;
+      </span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-card" data-reveal>
+      <h2>Why they matter</h2>
+      <p>
+        Butterflies are among the most sensitive barometers of a landscape's health — quick to
+        respond to changes in climate, vegetation and land use. Israel's position at the meeting
+        point of three continents makes its small fauna unusually rich, and unusually worth watching.
+      </p>
+      <p>
+        This guide is a starting point, not a finish line: five species you're likely to see in a
+        single afternoon. There are more than two hundred others — and we'll keep adding them.
+      </p>
+      <p class="about-foot">
+        Look up more often. The beauty is already there.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <p class="foot-lead">Israel's Butterflies</p>
+  <p class="foot-src">
+    Species notes: Israeli Butterfly Monitoring Scheme (BMS-IL) · Butterfly Conservation Europe.
+    Imagery: Wikimedia Commons (public domain &amp; CC0). Small White illustrated for this guide.
+  </p>
+  <p class="foot-meta">Motion powered by a hand-built engine — no libraries. More species coming.</p>
+</footer>
+
+<script src="motion.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
